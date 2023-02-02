@@ -57,10 +57,6 @@
 		    }
 		    for ($i = $start; $i <= count($input); $i++)
 		    {
-		    	$combination = array();
-				for ($k = $i; $k <= count($input); $k++) {
-				$combination[array_keys($array)[$k]] = $array[array_keys($array)[$k]];
-				}
 		        array_push($combination, $input["Pertanyaan " . $i]);
 		        getCombinations($input, $size, $i + 1, $combination, $combinations, $value);
 		        array_pop($combination);
